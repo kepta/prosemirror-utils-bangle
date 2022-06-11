@@ -1,23 +1,27 @@
 {
-  "name": "prosemirror-utils",
-  "version": "1.0.0-0",
-  "description": "Utils library for ProseMirror",
-  "main": "dist/index.js",
+  "name": "prosemirror-utils-bangle",
+  "version": "0.0.1",
+  "description": "Utils library for ProseMirror (forked for ES modules)",
   "author": {
     "name": "Eduard Shvedai",
     "email": "eshvedai@gmail.com",
     "url": "https://github.com/eshvedai"
   },
+  "homepage": "https://github.com/kepta/prosemirror-utils-bangle",
+  "type": "module",
+  "module": "src/index.js",
+  "exports": {
+    "import": "./src/index.js"
+  },
   "maintainers": [
     {
-      "name": "Eduard Shvedai",
-      "email": "eshvedai@atlassian.com"
+      "name": "Kushan Joshi"
     }
   ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/atlassian/prosemirror-utils.git"
+    "url": "git+https://github.com/kepta/prosemirror-utils-bangle.git"
   },
   "keywords": [
     "ProseMirror",
@@ -37,12 +41,8 @@
     "typings.d.ts"
   ],
   "scripts": {
-    "build": "NODE_ENV=production rollup -c",
-    "build_readme": "builddocs --name utils --format markdown --main src/README.md src/*.js > README.md",
-    "build_all": "npm run build && npm run build_readme",
     "test": "NODE_ENV=testing jest",
     "test-ci": "NODE_ENV=testing jest --coverage && codecov",
-    "prepare": "npm run build_all",
     "precommit": "lint-staged"
   },
   "peerDependencies": {
@@ -50,6 +50,7 @@
     "prosemirror-state": "^1.0.1"
   },
   "devDependencies": {
+    "buildtool-bangle": "^0.0.1",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",

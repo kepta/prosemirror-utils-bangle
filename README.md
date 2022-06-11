@@ -1,3 +1,7 @@
+This is a fork of https://github.com/atlassian/prosemirror-utils
+
+I forked it to make it easier to use with ES modules and a modern bundling.
+
 # Utils library for ProseMirror
 
 [![npm](https://img.shields.io/npm/v/prosemirror-utils.svg?style=flat-square)](https://www.npmjs.com/package/prosemirror-utils)
