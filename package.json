@@ -1,7 +1,8 @@
 {
   "name": "prosemirror-utils-bangle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utils library for ProseMirror (forked for ES modules)",
+  "access": "public",
   "author": {
     "name": "Eduard Shvedai",
     "email": "eshvedai@gmail.com",
@@ -10,6 +11,7 @@
   "homepage": "https://github.com/kepta/prosemirror-utils-bangle",
   "type": "module",
   "module": "src/index.js",
+  "types": "typings.d.ts",
   "exports": {
     "import": "./src/index.js"
   },
