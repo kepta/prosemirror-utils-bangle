@@ -1,6 +1,6 @@
 {
   "name": "prosemirror-utils-bangle",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utils library for ProseMirror (forked for ES modules)",
   "access": "public",
   "author": {
@@ -37,7 +37,7 @@
   },
   "typings": "typings.d.ts",
   "files": [
-    "dist",
+    "/src",
     "typings.d.ts"
   ],
   "scripts": {
