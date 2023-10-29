@@ -1,7 +1,6 @@
 import { NodeSelection } from 'prosemirror-state';
 import { Fragment, Node as PMNode } from 'prosemirror-model';
-import { setTextSelection } from './transforms';
-import { findParentNodeClosestToPos } from './selection';
+import { setTextSelection } from './transforms.js';
 
 // :: (selection: Selection) → boolean
 // Checks if current selection is a `NodeSelection`.

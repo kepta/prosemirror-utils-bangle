@@ -1,6 +1,6 @@
 import { NodeSelection, Selection } from 'prosemirror-state';
 import { Fragment } from 'prosemirror-model';
-import { findParentNodeOfType, findPositionOfNodeBefore } from './selection';
+import { findParentNodeOfType, findPositionOfNodeBefore } from './selection.js';
 import {
   cloneTr,
   isNodeSelection,
@@ -8,7 +8,7 @@ import {
   removeNodeAtPos,
   canInsert,
   isEmptyParagraph
-} from './helpers';
+} from './helpers.js';
 
 // :: (nodeType: union<NodeType, [NodeType]>) → (tr: Transaction) → Transaction
 // Returns a new transaction that removes a node of a given `nodeType`. It will return an original transaction if parent node hasn't been found.
