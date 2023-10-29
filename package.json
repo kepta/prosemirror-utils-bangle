@@ -1,6 +1,6 @@
 {
   "name": "prosemirror-utils-bangle",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Utils library for ProseMirror (forked for ES modules)",
   "access": "public",
   "author": {
